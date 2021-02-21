@@ -17,13 +17,17 @@ Country: Brazil
 
 #Import Stage#
 
-import OS
+import os
 
 
 #Code Stage#
 
 #Menu#
-print('1 - m/s to km/h')
+os.system('clear')
+
+print('MENU')
+
+print('\n1 - m/s to km/h')
 
 print('\n2 - km/h to m/s')
 
@@ -35,5 +39,27 @@ print('\n5 - m/s to fps')
 
 print('\n6 - fps to m/s')
 
-eWhichOneConversion = input('Select from 1 - 6: ')
+eWhichOneConversion = int(input('\nSelect from 1 - 6: '))
+
+
+os.system('clear')
+
+
+#m/s#
+if eWhichOneConversion == 1:
+	eMps = int(input('How much m/s do you wanna convert to km/h? '))
+
+	vKmph = (eMps * 3.6)
+
+	print(f'This how much {eMps} mps is in km/h: {vKmph}')
+
+	
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
+
+	if eBackToMenuOrExit == 'M':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')
+
 
