@@ -51,8 +51,25 @@ if eWhichOneConversion == 1:
 
 	vKmph = (eMps * 3.6)
 
-	print(f'This how much {eMps} mps is in km/h: {vKmph}')
+	print(f'This is how much {eMps} mps is in km/h: {vKmph}')
 
+	
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
+
+	if eBackToMenuOrExit == 'M':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')
+
+
+elif eWhichOneConversion == 2:
+	eKmph = int(input('How much km/h do you wanna convert to m/s? '))
+
+	vMps = (eKmph / 3.6)
+
+	print(f'This is how much {eKmph} km/h is in m/s: {vMps} m/s')
+	
 	
 	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
 
