@@ -29,7 +29,7 @@ print('\n5 - m/s to fps')
 
 print('\n6 - fps to m/s')
 
-eWhichOneConversion = int(input('\nSelect from 1 - 6: '))
+eWhichOneConversion = int(input('\nSelect from 1 - 6 or [0] to exit: '))
 
 
 
@@ -47,9 +47,9 @@ if eWhichOneConversion == 1:
 	print(f'This is how much {eMps:5.2f} mps is in km/h: {vKmph:5.2f}')
 
 	
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ').upper()
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
-	if eBackToMenuOrExit == 'M':
+	if eBackToMenuOrExit == 'B':
 		os.system('python3 Converter.py')
 
 	else:
@@ -65,9 +65,9 @@ elif eWhichOneConversion == 2:
 	print(f'This is how much {eKmph:5.2f} km/h is in m/s: {vMps:5.2f} m/s')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ').upper()
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
-	if eBackToMenuOrExit == 'M':
+	if eBackToMenuOrExit == 'B':
 		os.system('python3 Converter.py')
 
 	else:
@@ -80,14 +80,50 @@ elif eWhichOneConversion == 2:
 elif eWhichOneConversion == 3:
 	eMph = float(input('How much m/h do you wanna convert to km/h? '))
 
-	eKmph = (eMph * 1.6)
+	vKmph = (eMph * 1.6)
 
-	print(f'This is how much {eMph:5.2f} m/h is in km/h: {eKmph:5.2f} km/h')
+	print(f'This is how much {eMph:5.2f} m/h is in km/h: {vKmph:5.2f} km/h')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ').upper()
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
-	if eBackToMenuOrExit == 'M':
+	if eBackToMenuOrExit == 'B':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')
+
+
+
+elif eWhichOneConversion == 4:
+	eKmph = float(input('How much km/h do you wanna convert to m/h? '))
+
+	vMph = (eKmph / 1.6)
+
+	print(f'This is how much {eKmph:5.2f} km/h is in m/h: {vMph:5.2f} m/h')
+
+
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
+
+	if eBackToMenuOrExit == 'B':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')
+
+
+
+elif eWhichOneConversion == 0:
+	os.system('clear')
+
+
+
+else:
+	print('You choose an option that not exists. You can try again. ')
+
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
+
+	if eBackToMenuOrExit == 'B':
 		os.system('python3 Converter.py')
 
 	else:
