@@ -40,14 +40,14 @@ os.system('clear')
 #--------------------------------------m/s--------------------------------------#
 
 if eWhichOneConversion == 1:
-	eMps = int(input('How much m/s do you wanna convert to km/h? '))
+	eMps = float(input('How much m/s do you wanna convert to km/h? '))
 
 	vKmph = (eMps * 3.6)
 
-	print(f'This is how much {eMps} mps is in km/h: {vKmph:5.2f}')
+	print(f'This is how much {eMps:5.2f} mps is in km/h: {vKmph:5.2f}')
 
 	
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ').upper()
 
 	if eBackToMenuOrExit == 'M':
 		os.system('python3 Converter.py')
@@ -58,14 +58,14 @@ if eWhichOneConversion == 1:
 
 
 elif eWhichOneConversion == 2:
-	eKmph = int(input('How much km/h do you wanna convert to m/s? '))
+	eKmph = float(input('How much km/h do you wanna convert to m/s? '))
 
 	vMps = (eKmph / 3.6)
 
-	print(f'This is how much {eKmph} km/h is in m/s: {vMps:5.2f} m/s')
+	print(f'This is how much {eKmph:5.2f} km/h is in m/s: {vMps:5.2f} m/s')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ').upper()
 
 	if eBackToMenuOrExit == 'M':
 		os.system('python3 Converter.py')
@@ -74,3 +74,21 @@ elif eWhichOneConversion == 2:
 		os.system('clear')
 
 
+
+#--------------------------------------m/h--------------------------------------#
+
+elif eWhichOneConversion == 3:
+	eMph = float(input('How much m/h do you wanna convert to km/h? '))
+
+	eKmph = (eMph * 1.6)
+
+	print(f'This is how much {eMph:5.2f} m/h is in km/h: {eKmph:5.2f} km/h')
+
+
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ').upper()
+
+	if eBackToMenuOrExit == 'M':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')
