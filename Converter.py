@@ -5,24 +5,14 @@ Name: Paulo Henrique
 Country: Brazil
 """
 
-#Steps: 
-
-#Step 1:
-#Create the menu [OK]
-
-#Step 2:
-#Create 
-
-#-------------------------------------------------------------------------#
-
-#Import Stage#
+#--------------------------------------Import Stage--------------------------------------#
 
 import os
 
 
-#Code Stage#
 
-#Menu#
+#--------------------------------------Menu--------------------------------------#
+
 os.system('clear')
 
 print('MENU')
@@ -42,10 +32,13 @@ print('\n6 - fps to m/s')
 eWhichOneConversion = int(input('\nSelect from 1 - 6: '))
 
 
+
 os.system('clear')
 
 
-#m/s#
+
+#--------------------------------------m/s--------------------------------------#
+
 if eWhichOneConversion == 1:
 	eMps = int(input('How much m/s do you wanna convert to km/h? '))
 
@@ -61,6 +54,7 @@ if eWhichOneConversion == 1:
 
 	else:
 		os.system('clear')
+
 
 
 elif eWhichOneConversion == 2:
