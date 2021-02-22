@@ -51,7 +51,7 @@ if eWhichOneConversion == 1:
 
 	vKmph = (eMps * 3.6)
 
-	print(f'This is how much {eMps} mps is in km/h: {vKmph}')
+	print(f'This is how much {eMps} mps is in km/h: {vKmph:5.2f}')
 
 	
 	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
@@ -68,9 +68,9 @@ elif eWhichOneConversion == 2:
 
 	vMps = (eKmph / 3.6)
 
-	print(f'This is how much {eKmph} km/h is in m/s: {vMps} m/s')
-	
-	
+	print(f'This is how much {eKmph} km/h is in m/s: {vMps:5.2f} m/s')
+
+
 	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [M]back to Menu? ')
 
 	if eBackToMenuOrExit == 'M':
