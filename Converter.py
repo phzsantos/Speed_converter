@@ -11,6 +11,19 @@ import os
 
 
 
+#--------------------------------------Def Stage--------------------------------------#
+
+def eBackToMenuOrExit():
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
+
+	if eBackToMenuOrExit == 'B':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')	
+
+
+
 #--------------------------------------Menu--------------------------------------#
 
 os.system('clear')
@@ -32,7 +45,6 @@ print('\n6 - fps to m/s')
 eWhichOneConversion = int(input('\nSelect from 1 - 6 or [0] to exit: '))
 
 
-
 os.system('clear')
 
 
@@ -45,15 +57,9 @@ if eWhichOneConversion == 1:
 	vKmph = (eMps * 3.6)
 
 	print(f'This is how much {eMps:5.2f} mps is in km/h: {vKmph:5.2f}')
-
 	
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')
+    eBackToMenuOrExit()
 
 
 
@@ -65,13 +71,7 @@ elif eWhichOneConversion == 2:
 	print(f'This is how much {eKmph:5.2f} km/h is in m/s: {vMps:5.2f} m/s')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
-
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')
+    eBackToMenuOrExit()
 
 
 
@@ -85,13 +85,7 @@ elif eWhichOneConversion == 3:
 	print(f'This is how much {eMph:5.2f} m/h is in km/h: {vKmph:5.2f} km/h')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
-
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')
+    eBackToMenuOrExit()
 
 
 
@@ -103,13 +97,7 @@ elif eWhichOneConversion == 4:
 	print(f'This is how much {eKmph:5.2f} km/h is in m/h: {vMph:5.2f} m/h')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
-
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')
+    eBackToMenuOrExit()
 
 
 
@@ -123,13 +111,7 @@ elif eWhichOneConversion == 5:
 	print(f'This is how much {eMps:5.2f} m/s is in FPS: {vFps:5.2f} FPS')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
-
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')
+    eBackToMenuOrExit()
 
 
 
@@ -141,13 +123,7 @@ elif eWhichOneConversion == 6:
 	print(f'This is how much {eFps:5.2f} FPS is in m/s: {vMps:5.2f} m/s')
 
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
-
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')	
+    eBackToMenuOrExit()	
 
 
 
@@ -161,11 +137,6 @@ elif eWhichOneConversion == 0:
 else:
 	print('You choose an option that not exists. You can try again. ')
 
-	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
-	if eBackToMenuOrExit == 'B':
-		os.system('python3 Converter.py')
-
-	else:
-		os.system('clear')
+    eBackToMenuOrExit()
 		
