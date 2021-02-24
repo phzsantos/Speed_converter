@@ -120,7 +120,7 @@ elif eWhichOneConversion == 5:
 
 	vFps = (eMps * 3.281)
 
-	print(f'This is how much {eMps:5.2f} m/s is in FPS: {vFps} FPS')
+	print(f'This is how much {eMps:5.2f} m/s is in FPS: {vFps:5.2f} FPS')
 
 
 	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
@@ -130,6 +130,24 @@ elif eWhichOneConversion == 5:
 
 	else:
 		os.system('clear')
+
+
+
+elif eWhichOneConversion == 6:
+	eFps = float(input('How much FPS do you wanna convert to m/s? '))
+
+	vMps = (eFps / 3.281)
+
+	print(f'This is how much {eFps:5.2f} FPS is in m/s: {vMps:5.2f} m/s')
+
+
+	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
+
+	if eBackToMenuOrExit == 'B':
+		os.system('python3 Converter.py')
+
+	else:
+		os.system('clear')	
 
 
 
