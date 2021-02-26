@@ -13,6 +13,11 @@ import os
 
 #--------------------------------------Def Stage--------------------------------------#
 
+def clear():
+	os.system('clear')
+
+
+
 def eBackToMenuOrExit():
 	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
@@ -20,13 +25,13 @@ def eBackToMenuOrExit():
 		os.system('python3 Converter.py')
 
 	else:
-		os.system('clear')	
+		clear()	
 
 
 
 #--------------------------------------Menu--------------------------------------#
 
-os.system('clear')
+clear()
 
 print('MENU')
 
@@ -45,7 +50,7 @@ print('\n6 - fps to m/s')
 eWhichOneConversion = int(input('\nSelect from 1 - 6 or [0] to exit: '))
 
 
-os.system('clear')
+clear()
 
 
 
@@ -130,7 +135,7 @@ elif eWhichOneConversion == 6:
 #--------------------------------------End--------------------------------------#
 
 elif eWhichOneConversion == 0:
-	os.system('clear')
+	clear()
 
 
 
