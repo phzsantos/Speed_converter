@@ -61,7 +61,7 @@ if eWhichOneConversion == 1:
 
 	vKmph = (eMps * 3.6)
 
-	print(f'This is how much {eMps:5.2f} mps is in km/h: {vKmph:5.2f}')
+	print(f'This is how much {eMps:5.2f} mps is in km/h: {vKmph:5.2f} km/h')
 	
 
 	eBackToMenuOrExit()
@@ -140,7 +140,7 @@ elif eWhichOneConversion == 0:
 
 
 else:
-	print('You choose an option that not exists. You can try again. ')
+	print('You choose an option that not exists. You can try again.')
 
 
 	eBackToMenuOrExit()
