@@ -97,7 +97,7 @@ elif eWhichOneConversion == 4:
 elif eWhichOneConversion == 5:
 	eMps = float(input('How much m/s do you wanna convert to FPS? '))
 
-	vFps = (eMps * 3.2)
+	vFps = (eMps * 3.281)
 
 	print(f'This is how much {eMps:5.2f} m/s is in FPS: {vFps:5.2f} FPS')
 
@@ -109,7 +109,7 @@ elif eWhichOneConversion == 5:
 elif eWhichOneConversion == 6:
 	eFps = float(input('How much FPS do you wanna convert to m/s? '))
 
-	vMps = (eFps / 3.2)
+	vMps = (eFps / 3.281)
 
 	print(f'This is how much {eFps:5.2f} FPS is in m/s: {vMps:5.2f} m/s')
 
