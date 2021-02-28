@@ -29,7 +29,11 @@ print('\n5 - m/s to fps')
 
 print('\n6 - fps to m/s')
 
-eWhichOneConversion = int(input('\nSelect from 1 - 6 or [0] to exit: '))
+print('\n7 - knot to km/h')
+
+print('\n8 - km/h to knot')
+
+eWhichOneConversion = int(input('\nSelect from 1 - 8 or [0] to exit: '))
 
 
 functions.clear()
@@ -110,7 +114,33 @@ elif eWhichOneConversion == 6:
 	print(f'This is how much {eFps:5.2f} FPS is in m/s: {vMps:5.2f} m/s')
 
 
-	functions.eBackToMenuOrExit()	
+	functions.eBackToMenuOrExit()
+
+
+
+#--------------------------------------knot--------------------------------------#
+
+elif eWhichOneConversion == 7:
+	eKnot = float(input('How much Knots do you wanna convert to km/h? '))
+
+	vKmph = (eKnot * 1.852)
+
+	print(f'This is how much {eKnot:5.2f} knots is in km/h: {vKmph:5.2f} km/h')
+
+
+	functions.eBackToMenuOrExit()
+
+
+
+elif eWhichOneConversion == 8:
+	eKmph = float(input('How much km/h do you wanna convert to Knots? '))
+
+	vKnot = (eKmph / 1.852)
+
+	print(f'This is how much {eKmph:5.2f} km/h is in knots: {vKnot:5.2f} knots')
+
+
+	functions.eBackToMenuOrExit()
 
 
 
