@@ -17,6 +17,8 @@ functions.clear()
 
 print('MENU')
 
+print('\n0 - Exit')
+
 print('\n1 - m/s to km/h')
 
 print('\n2 - km/h to m/s')

@@ -8,7 +8,7 @@ I'm starting in code. So my first program is not complex. It's just a speed conv
 
 - [ ] Speed Converter
 	- [x] Menu
-		- [ ] 0 - Exit 
+		- [x] 0 - Exit 
 		- [x] 1 - m/s to km/h
 		- [x] 2 - km/h to m/s
 		- [x] 3 - m/h to km/h
