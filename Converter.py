@@ -58,7 +58,7 @@ elif eWhichOneConversion == 2:
 #--------------------------------------m/h--------------------------------------#
 
 elif eWhichOneConversion == 3:
-	calculators.MpsToKmph()
+	calculators.MphToKmph()
 
 
 
