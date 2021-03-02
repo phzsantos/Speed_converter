@@ -2,6 +2,8 @@ import functions
 
 
 
+#--------------------------------------m/s--------------------------------------#
+
 def MpsToKmph():
 	eMps = float(input('How much m/s do you wanna convert to km/h? '))
 
@@ -25,6 +27,8 @@ def KmphToMps():
 	functions.eBackToMenuOrExit()
 
 
+
+#--------------------------------------m/h--------------------------------------#
 
 def MphToKmph():
 	eMph = float(input('How much m/h do you wanna convert to km/h? '))
@@ -50,6 +54,8 @@ def KmphToMph():
 
 
 
+#--------------------------------------Fps--------------------------------------#
+
 def MpsToFPS():
 	eMps = float(input('How much m/s do you wanna convert to FPS? '))
 
@@ -73,6 +79,8 @@ def FPSToMps():
 	functions.eBackToMenuOrExit()
 
 
+
+#--------------------------------------knot--------------------------------------#
 
 def KnotToKmph():
 	eKnot = float(input('How much Knots do you wanna convert to km/h? '))

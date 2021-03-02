@@ -7,18 +7,18 @@ I'm starting in code. So my first program is not complex. It's just a speed conv
 ### Project Status: **Development**
 
 - [ ] Speed Converter
-	- [x] Menu
-		- [x] 0 - Exit 
-		- [x] 1 - m/s to km/h
-		- [x] 2 - km/h to m/s
-		- [x] 3 - m/h to km/h
-		- [x] 4 - km/h to m/h
-		- [x] 5 - m/s to fps
-		- [x] 6 - fps to m/s
-		- [x] 7 - knot to km/h
-		- [x] 8 - km/h to knot
 
-	- [x] Functions:  
+	- [x] Functions:
+		- [x] Menu
+			- [x] 0 - Exit 
+			- [x] 1 - m/s to km/h
+			- [x] 2 - km/h to m/s
+			- [x] 3 - m/h to km/h
+			- [x] 4 - km/h to m/h
+			- [x] 5 - m/s to fps
+			- [x] 6 - fps to m/s
+			- [x] 7 - knot to km/h
+			- [x] 8 - km/h to knot  
 		- [x] Clear
 		- [x] Back to menu
 		- [x] MissClick
