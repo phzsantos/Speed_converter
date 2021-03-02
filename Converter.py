@@ -8,6 +8,7 @@ Country: Brazil
 #--------------------------------------Import Stage--------------------------------------#
 
 import functions
+import calculators
 
 
 
@@ -45,104 +46,48 @@ functions.clear()
 #--------------------------------------m/s--------------------------------------#
 
 if eWhichOneConversion == 1:
-	eMps = float(input('How much m/s do you wanna convert to km/h? '))
-
-	vKmph = (eMps * 3.6)
-
-	print(f'This is how much {eMps:5.2f} mps is in km/h: {vKmph:5.2f} km/h')
-	
-
-	functions.eBackToMenuOrExit()
+	calculators.MpsToKmph()
 
 
 
 elif eWhichOneConversion == 2:
-	eKmph = float(input('How much km/h do you wanna convert to m/s? '))
-
-	vMps = (eKmph / 3.6)
-
-	print(f'This is how much {eKmph:5.2f} km/h is in m/s: {vMps:5.2f} m/s')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.KmphToMps()
 
 
 
 #--------------------------------------m/h--------------------------------------#
 
 elif eWhichOneConversion == 3:
-	eMph = float(input('How much m/h do you wanna convert to km/h? '))
-
-	vKmph = (eMph * 1.6)
-
-	print(f'This is how much {eMph:5.2f} m/h is in km/h: {vKmph:5.2f} km/h')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.MpsToKmph()
 
 
 
 elif eWhichOneConversion == 4:
-	eKmph = float(input('How much km/h do you wanna convert to m/h? '))
-
-	vMph = (eKmph / 1.6)
-
-	print(f'This is how much {eKmph:5.2f} km/h is in m/h: {vMph:5.2f} m/h')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.KmphToMph()
 
 
 
 #--------------------------------------Fps--------------------------------------#
 
 elif eWhichOneConversion == 5:
-	eMps = float(input('How much m/s do you wanna convert to FPS? '))
-
-	vFps = (eMps * 3.281)
-
-	print(f'This is how much {eMps:5.2f} m/s is in FPS: {vFps:5.2f} FPS')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.MpsToFPS()
 
 
 
 elif eWhichOneConversion == 6:
-	eFps = float(input('How much FPS do you wanna convert to m/s? '))
-
-	vMps = (eFps / 3.281)
-
-	print(f'This is how much {eFps:5.2f} FPS is in m/s: {vMps:5.2f} m/s')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.FPSToMps()
 
 
 
 #--------------------------------------knot--------------------------------------#
 
 elif eWhichOneConversion == 7:
-	eKnot = float(input('How much Knots do you wanna convert to km/h? '))
-
-	vKmph = (eKnot * 1.852)
-
-	print(f'This is how much {eKnot:5.2f} knots is in km/h: {vKmph:5.2f} km/h')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.KnotToKmph()
 
 
 
 elif eWhichOneConversion == 8:
-	eKmph = float(input('How much km/h do you wanna convert to Knots? '))
-
-	vKnot = (eKmph / 1.852)
-
-	print(f'This is how much {eKmph:5.2f} km/h is in knots: {vKnot:5.2f} knots')
-
-
-	functions.eBackToMenuOrExit()
+	calculators.KmphToKnot()
 
 
 
@@ -154,8 +99,5 @@ elif eWhichOneConversion == 0:
 
 
 else:
-	print('You choose an option that not exists. You can try again.')
-
-
-	functions.eBackToMenuOrExit()
+	functions.MissClick()
 		

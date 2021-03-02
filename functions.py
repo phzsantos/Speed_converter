@@ -13,3 +13,11 @@ def eBackToMenuOrExit():
 
 	else:
 		clear()
+
+
+
+def MissClick():
+	print('You choose an option that not exists. You can try again.')
+
+
+	eBackToMenuOrExit()
