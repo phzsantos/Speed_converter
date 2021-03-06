@@ -1,5 +1,6 @@
 
 import os
+import calculators
 
 
 
@@ -19,6 +20,17 @@ def Menu():
 		\n7 - knot to km/h
 		\n8 - km/h to knot
 		""")
+
+
+
+#--------------------------------------eWichOneConversion--------------------------------------#
+
+FunctionsCalculators = [calculators.MpsToKmph, calculators.KmphToMps, calculators.MphToKmph, calculators.KmphToMph, calculators.MpsToFPS, calculators.FPSToMps, calculators.KnotToKmph, calculators.KmphToKnot]
+ 
+def eWhichOneConversion(question):
+	FunctionsCalculators[question+1]()
+	clear()
+
 
 
 
@@ -50,4 +62,28 @@ def MissClick():
 
 	eBackToMenuOrExit()
 
+
+
+#--------------------------------------ValueError--------------------------------------#
+
+
+
+
+"""def IfError(answer):
+	try: 
+
+
+
+
+def menu(input):
+	try:
+		calculators.input
+
+	except ValueError as erro:
+		print('Você usou numeros com ",", o programa aceita apenas numeros com "."')
+		MissClick()
+"""
+
+	
+		
 
