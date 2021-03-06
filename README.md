@@ -41,7 +41,10 @@ Of Course! i'm start to think about it. In the first try I'll try pyQT and pyGTK
 			- [x] 5 - m/s to fps
 			- [x] 6 - fps to m/s
 			- [x] 7 - knot to km/h
-			- [x] 8 - km/h to knot  
+			- [x] 8 - km/h to knot
+		- [ ] Error handling
+			- [ ] Value Error
+			- [ ] Unexpected Error 
 		- [x] Clear
 		- [x] Back to menu
 		- [x] MissClick
