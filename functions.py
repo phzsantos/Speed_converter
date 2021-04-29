@@ -1,10 +1,6 @@
-
 import os
 
-
-
 #--------------------------------------Menu--------------------------------------#
-
 def Menu():
 	clear()
 
@@ -20,17 +16,11 @@ def Menu():
 		\n8 - km/h to knot
 		""")
 
-
-
 #--------------------------------------Clear--------------------------------------#
-
 def clear():
 	os.system('clear')
 
-
-
 #--------------------------------------eBackToMenu--------------------------------------#
-
 def eBackToMenuOrExit():
 	eBackToMenuOrExit = input('\nDo you wanna [E]exit or [B]back to Menu? ').upper()
 
@@ -40,14 +30,8 @@ def eBackToMenuOrExit():
 	else:
 		clear()
 
-
-
 #--------------------------------------MissClick--------------------------------------#
-
 def MissClick():
 	print('You choose an option that not exists. You can try again.')
 
-
 	eBackToMenuOrExit()
-
-
